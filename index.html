@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PolyFind - The Ultimate Polymarket Companion</title>
     <meta name="description" content="Real-time trade monitoring, AI-powered analysis, and institutional-grade tools for Polymarket traders.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <a href="#" class="logo-link">
-                <img src="assets/images/logo.png" alt="PolyFind Logo" class="logo">
+                <img src="/assets/images/logo.png" alt="PolyFind Logo" class="logo">
             </a>
             <nav>
                 <ul class="nav-links">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="hero-image-container fade-in">
-                <img src="assets/images/live-feed.png" alt="PolyFind Live Feed Dashboard">
+                <img src="/assets/images/live-feed.png" alt="PolyFind Live Feed Dashboard">
             </div>
         </div>
     </section>
@@ -70,7 +70,7 @@
                     </ul>
                 </div>
                 <div class="feature-image">
-                    <img src="assets/images/live-feed.png" alt="Real-time Trade Monitor">
+                    <img src="/assets/images/live-feed.png" alt="Real-time Trade Monitor">
                 </div>
             </div>
         </div>
@@ -89,8 +89,31 @@
                         <li><strong>Natural Language:</strong> Just ask "Show me unusual volume in Sports."</li>
                     </ul>
                 </div>
-                <div class="feature-image">
-                    <img src="assets/images/agent-page.png" alt="AI Assistant Interface">
+                <div class="feature-image slideshow">
+                    <img src="/assets/images/agent-page.png" alt="AI Assistant Interface" class="slide active">
+                    <img src="/assets/images/agent-page2.png" alt="AI Assistant Analysis" class="slide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature: Whale Watching -->
+    <section class="section">
+        <div class="container">
+            <div class="feature-block fade-in">
+                <div class="feature-content">
+                    <span class="badge">Wallet Analysis</span>
+                    <h3>Follow the Smart Money</h3>
+                    <p>Don't just watch the market—watch the players who move it. Identify and track profitable wallets with our comprehensive analysis tools.</p>
+                    <ul class="feature-list">
+                        <li><strong>Activity Heatmaps:</strong> Visualize trading patterns and intensity over time.</li>
+                        <li><strong>Persona Badges:</strong> Instantly identify known entities and "Smart Money."</li>
+                        <li><strong>P&L Tracking:</strong> See historical win rates and recent performance.</li>
+                    </ul>
+                </div>
+                <div class="feature-image slideshow">
+                    <img src="/assets/images/wallets-2.png" alt="Wallet Analysis" class="slide active">
+                    <img src="/assets/images/wallets-1.png" alt="Wallet Browser" class="slide">
                 </div>
             </div>
         </div>
@@ -103,14 +126,14 @@
             <div class="grid grid-2">
                 <div class="card fade-in">
                     <div class="card-image">
-                        <img src="assets/images/categories.png" alt="Categories">
+                        <img src="/assets/images/categories.png" alt="Categories">
                     </div>
                     <h3>Advanced Discovery</h3>
                     <p>Browse markets by category with detailed volume and trade count stats. Filter by time range (5m to 30d) to find trending topics.</p>
                 </div>
                 <div class="card fade-in">
                     <div class="card-image">
-                        <img src="assets/images/leaderboards.png" alt="Leaderboards">
+                        <img src="/assets/images/leaderboards.png" alt="Leaderboards">
                     </div>
                     <h3>Leaderboards</h3>
                     <p>Track top series, hottest markets, and profitable traders. See who's winning with our gold, silver, and bronze ranking system.</p>
@@ -122,19 +145,63 @@
     <!-- Deep Dive: Market & Event -->
     <section class="section">
         <div class="container">
-            <div class="feature-block fade-in">
+            <div class="text-center" style="max-width: 700px; margin: 0 auto 4rem;">
+                <h2>The Deepest Data in the Game</h2>
+                <p>From high-level event volume to order book granularities, see the full picture.</p>
+            </div>
+            
+            <!-- Market Depth -->
+            <div class="feature-block fade-in" style="margin-bottom: 6rem;">
                 <div class="feature-content">
-                    <h3>Deep Market Depth</h3>
-                    <p>Get granular with individual market and event pages. Analyze order books, liquidity, and competitive scores.</p>
+                    <h3>Micro-Level Market Depth</h3>
+                    <p>Get granular with individual market pages. Analyze order books, liquidity, and competitive scores in real-time.</p>
                     <ul class="feature-list">
                         <li>Live Order Book depth visualization</li>
                         <li>Execution simulation & calculators</li>
                         <li>Historical volume & price change stats</li>
-                        <li>Related markets & event grouping</li>
                     </ul>
                 </div>
                 <div class="feature-image">
-                    <img src="assets/images/market-page.png" alt="Market Detail Page">
+                    <img src="/assets/images/market-page.png" alt="Market Detail Page">
+                </div>
+            </div>
+
+            <!-- Event Depth -->
+            <div class="feature-block reverse fade-in">
+                <div class="feature-content">
+                    <h3>Macro-Level Event Context</h3>
+                    <p>Zoom out to see the entire event. Track volume aggregation across multiple related markets to spot arbitrage and broader trends.</p>
+                    <ul class="feature-list">
+                        <li>Aggregated volume across all markets</li>
+                        <li>Sports team matchups and series data</li>
+                        <li>Comparative liquidity visualization</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="/assets/images/event-page.png" alt="Event Detail Page">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature: Institutional Risk -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="feature-block fade-in">
+                <div class="feature-content">
+                    <span class="badge">Pro Tier</span>
+                    <h3>Institutional-Grade Risk Management</h3>
+                    <p>Professional tools designed for serious traders. Manage your exposure and understand your risk at a glance.</p>
+                    <ul class="feature-list">
+                        <li><strong>Real-Time VaR:</strong> Monitor your Value at Risk dynamically.</li>
+                        <li><strong>Exposure Analysis:</strong> Visualize concentration with donut charts.</li>
+                        <li><strong>Risk Alerts:</strong> Get notified when concentration gets too high.</li>
+                        <li><strong>Positions Tracking:</strong> Monitor live and closed positions.</li>
+                    </ul>
+                </div>
+                <div class="feature-image slideshow">
+                    <img src="/assets/images/position-metrics.png" alt="Portfolio Risk Metrics" class="slide active">
+                    <img src="/assets/images/postions-live.png" alt="Live Positions" class="slide">
                 </div>
             </div>
         </div>
@@ -146,7 +213,7 @@
             <h2 class="fade-in">Never Miss a Move</h2>
             <p class="fade-in">Set custom alerts and get notified instantly via Telegram.</p>
             <div class="hero-image-container fade-in" style="max-width: 900px; margin-top: 2rem;">
-                <img src="assets/images/alerts.png" alt="Alert Configuration">
+                <img src="/assets/images/alerts.png" alt="Alert Configuration">
             </div>
             <div class="grid grid-3 fade-in" style="margin-top: 3rem; text-align: left;">
                 <div class="card">
@@ -235,7 +302,7 @@
 
             <div class="card fade-in" style="margin-bottom: 1rem;">
                 <h4>Do I need a Polymarket account?</h4>
-                <p style="margin-bottom:0">You can use PolyFind to browse and analyze without one. To execute trades (via external links) or sync positions, you'll interact with Polymarket directly.</p>
+                <p style="margin-bottom:0">No. You can use PolyFind to browse and analyze without one. To execute trades (via external links) or sync positions, you'll interact with Polymarket directly. You do not however, need an account to do paper trading</p>
             </div>
         </div>
     </section>
@@ -281,7 +348,7 @@
         <div class="container">
             <div class="footer-content">
                 <div>
-                    <img src="assets/images/logo.png" alt="PolyFind" class="footer-logo">
+                    <img src="/assets/images/logo.png" alt="PolyFind" class="footer-logo">
                     <p style="font-size: 0.9rem; margin-top: 1rem; max-width: 300px;">
                         The advanced terminal for prediction markets. Built for traders who demand speed and precision.
                     </p>
@@ -311,27 +378,6 @@
 
     <a href="#waitlist" class="btn btn-waitlist-float">Join Waitlist</a>
 
-    <script>
-        // Simple intersection observer for fade-in animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Only animate once
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-    </script>
+    <script src="/script.js"></script>
 </body>
 </html>
-
